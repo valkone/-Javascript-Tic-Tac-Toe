@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 405px;
+    margin: 10px auto;
+}
+
+#wrapper h1 {
+    text-align: center;
+}
+
+.x, .o, .empty {
+    width: 110px;
+    height: 110px;
+}
+
+.x {
+    background-image: url('../images/x-image.png');
+    background-size: 110px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: center;
+}
+
+.o {
+    background-image: url('../images/o-image.png');
+    background-size: 110px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: center;
+}
+
+#game-table td{
+    padding: 10px;
+}
+
+#game-table, #game-table td {
+    border: 1px solid #000;
+}
+
+#lastPlayer, #movesCount, #gameOver {
+    display: none;
+}
+
+#playerNow {
+    font-size: 25px;
+    color: #17acd6;
+    float: left;
+}
+
+#newGame {
+    float: right;
+    display: none;
+}
+
+#newGame a {
+    font-size: 23px;
+    color: #17acd6;
+    text-decoration: none;
+}
+
+#newGame a:hover {
+    text-decoration: underline;
+}
+
+.clear {
+    *zoom: 1
+}
+
+.clear:after {
+    height: 0;
+    clear: both;
+    display: block;
+    content: "";
+}
